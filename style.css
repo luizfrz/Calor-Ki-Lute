@@ -1,4 +1,9 @@
-
+@font-face {
+    font-family: 'BD Supper';
+    src: url('BDSupperBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
 
 * {
     margin: 0; padding: 0;
@@ -6,7 +11,7 @@
     font-weight: bold;
     font-style: normal;
     /*consertar essa questão da font*/
-    font-family: 'BD Supper';
+    font-family: 'Courier New', Courier, monospace;
     outline: none; border: none;
     text-decoration: none;
     text-transform: capitalize;
@@ -33,12 +38,15 @@ header {
 }
 
 header .logo {
+    font-family: 'BD Supper', sans-serif;
+    font-weight: bold;
+    font-style: normal;
     font-size: 3rem;
     color: #333;
     font-weight: bolder;
 }
 
-header .logo span {
+header .logo:hover {
     color: #AA0000;
 }
 
@@ -52,6 +60,13 @@ header .navbar a:hover {
     color: #AA0000;
 }
 
-header .icons a {
-    font-size: 3rem;
+header .icone a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
 }
+
+header .icone a:hover {
+    color: #AA0000;
+}
+
