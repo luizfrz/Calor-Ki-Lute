@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'BD Supper';
-    src: url('BDSupperBold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
+@import url("font/stylesheet.css");
 
 * {
     margin: 0; padding: 0;
@@ -70,3 +65,67 @@ header .icone a:hover {
     color: #AA0000;
 }
 
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+header #toggler:hover {
+    color: #AA0000;
+}
+
+/*estilos específicos para dispositivos com esses pixels*/
+@media (max-width: 991px) {
+    
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+}
+
+@media (Max-width: 768px) {
+    
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;  left: 0;  right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar {
+        clip-path: polygon(0 0, 100% 0, 0 0);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    html {
+        font-size: 50%;
+    }
+
+}
