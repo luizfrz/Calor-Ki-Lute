@@ -19,6 +19,26 @@ html {
     overflow-x: hidden;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    background: #333;
+    color: #fff;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    background: #AA0000;
+}
+
+/*barra de navegação começa*/
 header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -77,6 +97,41 @@ header .fa-bars {
     border: .1rem solid rgba(0,0,0,.3);
     display: none;
 }
+/*barra de navegação termina*/
+
+/*parte inicial começa*/
+.inicio {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.inicio .conteudo {
+    max-width: 50rem;
+}
+
+.inicio .conteudo h3 {
+    font-size: 6rem;
+    color: #333;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.inicio .conteudo span {
+    font-size: 3rem;
+    color: #AA0000;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.inicio .conteudo p {
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/*parte inicial termina*/
 
 /*estilos específicos para dispositivos com esses pixels*/
 @media (max-width: 991px) {
@@ -88,6 +143,11 @@ header .fa-bars {
     header {
         padding: 2rem;
     }
+
+    section {
+        padding: 2rem;
+    }
+
 }
 
 @media (Max-width: 768px) {
@@ -115,6 +175,14 @@ header .fa-bars {
         border: .1rem solid rgba(0,0,0,.1);
         display: block;
     }
+
+    .inicio .conteudo h3 {
+        font-size: 5rem;
+    }
+
+    .inicio .conteudo span {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -124,3 +192,5 @@ header .fa-bars {
     }
 
 }
+
+
